@@ -12,4 +12,5 @@ EXPOSE 8080
 
 ENV SPRING_PROFILES_ACTIVE=render
 
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","app.jar","--spring.profiles.active=render","--spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration"]
+
