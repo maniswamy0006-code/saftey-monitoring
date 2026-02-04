@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safety Monitor</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+
+<main class="page-wrap">
+  <div class="container py-4">
+
+    <div class="hero card-lite">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <h1 class="mb-2">Real-time Safety Monitoring for Construction</h1>
+          <p class="mb-3">
+            Report hazards, track incidents, run inspections, manage permits, and view dashboards for Workers,
+            Engineers and Management—everything in one portal.
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-primary px-4" href="/register">Get Started</a>
+            <a class="btn btn-outline-primary px-4" href="/login">Login</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-lite p-3">
+            <div class="fw-semibold">Quick Actions</div>
+            <div class="text-muted small mb-2">After login you’ll see role-based dashboard.</div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-light border" disabled>Report Hazard</button>
+              <button class="btn btn-light border" disabled>Start Inspection</button>
+              <button class="btn btn-light border" disabled>Create Permit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <div class="section-title h4 mb-1">EOHS Modules</div>
+      <div class="section-sub mb-3">Organized like a resource/program portal.</div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-lite p-3 h-100">
+            <div class="d-flex gap-3">
+              <div class="card-icon">H</div>
+              <div>
+                <div class="fw-bold">Hazard Reporting</div>
+                <div class="text-muted small">Workers report hazards with location, photo, and severity.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-lite p-3 h-100">
+            <div class="d-flex gap-3">
+              <div class="card-icon">I</div>
+              <div>
+                <div class="fw-bold">Incidents & Near Miss</div>
+                <div class="text-muted small">Track incidents, root cause, and corrective actions.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-lite p-3 h-100">
+            <div class="d-flex gap-3">
+              <div class="card-icon">S</div>
+              <div>
+                <div class="fw-bold">Safety Inspections</div>
+                <div class="text-muted small">Checklists for excavation, heights, electrical, fire.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-lite p-3 h-100">
+            <div class="d-flex gap-3">
+              <div class="card-icon">P</div>
+              <div>
+                <div class="fw-bold">Permit to Work</div>
+                <div class="text-muted small">Hot work, confined space, lifting permits & approvals.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-lite p-3 h-100">
+            <div class="d-flex gap-3">
+              <div class="card-icon">D</div>
+              <div>
+                <div class="fw-bold">Dashboards</div>
+                <div class="text-muted small">Leading/lagging indicators for management.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-lite p-3 h-100">
+            <div class="d-flex gap-3">
+              <div class="card-icon">T</div>
+              <div>
+                <div class="fw-bold">Training Records</div>
+                <div class="text-muted small">Induction, toolbox talks, certificates & expiry.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<div th:replace="fragments/footer :: footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
